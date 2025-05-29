@@ -366,13 +366,32 @@ Youtube video -->
     <div class="container">
       <h2 class="title">Methodology</h2>
 
-      <iframe src="illustration/Methodology.pdf" width="100%" height="550">
-      </iframe>
+      <div class="pdf-container">
+        <iframe src="illustration/Methodology.pdf" width="100%" height="800" style="border: none;">
+        </iframe>
+      </div>
         
     </div>
   </div>
 </section>
 <!--End paper poster -->
+
+<style>
+.pdf-container {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 
 
 <!--BibTex citation -->
