@@ -67,6 +67,45 @@
     .MathJax {
       font-weight: bold !important;
     }
+
+    .pdf-scale-downer {
+      width: 100%;
+      height: 800px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .pdf-scale-downer iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .scale-downer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .is-max-desktop {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .section {
+      padding: 2rem 0;
+    }
+
+    .hero {
+      padding: 1rem 0;
+    }
+
+    .hero-body {
+      padding: 1rem 0;
+    }
   </style>
 </head>
 <body>
@@ -85,7 +124,7 @@
                 <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=wHJ_cBIAAAAJ&hl=de" target="_blank">Juan C Leon Alcazar</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://escorciav.github.io/" target="_blank">Victor Escorciar</a><sup>2</sup>
+                    <a href="https://escorciav.github.io/" target="_blank">Judith Castillo</a><sup>2</sup>
                   </span>
                   <span class="author-block">
                     <a href="https://ivul.kaust.edu.sa/" target="_blank">Bernard Ghanem</a><sup>1</sup>
@@ -93,7 +132,7 @@
                   </div>
                   <br>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">KAUST<sup>1</sup>, Samsung Research<sup>2</sup></span>
+                    <span class="author-block">KAUST<sup>1</sup>, Independent Researcher<sup>2</sup></span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
                   <br>
@@ -578,34 +617,16 @@
           </div>
         </div>
         <div class="content has-text-centered">
-          <img src="results/baseline_comparison.png" alt="Baseline Comparison" style="width: 100%; height: auto; object-fit: scale-down;">
+          <img src="results/baseline_comparison.png" alt="Baseline Comparison" style="width: 80%; height: auto; object-fit: scale-down;">
         </div>
         <div class="content has-text-centered" style="margin-top: 2em;">
-          <img src="results/user_study.png" alt="User Study Results" style="width: 100%; height: auto; object-fit: scale-down;">
+          <img src="results/user_study.png" alt="User Study Results" style="width: 80%; height: auto; object-fit: scale-down;">
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End Baseline Comparison Image -->
-
-<style>
-.pdf-scale-downer {
-  width: 100%;
-  height: 800px;
-  overflow: hidden;
-  position: relative;
-}
-
-.pdf-scale-downer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
