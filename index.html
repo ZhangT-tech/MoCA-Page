@@ -220,7 +220,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/unicorn.jpg" alt="Input Image: Unicorn" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/unicorn.jpg" alt="Input Image: Unicorn" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Unicorn
@@ -228,7 +228,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/origin_horse.gif" alt="Input Video: Horse" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/origin_horse.gif" alt="Input Video: Horse" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Horse
@@ -236,7 +236,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/horse_unicorn.gif" alt="Generated: Horse-Unicorn" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/horse_unicorn.gif" alt="Generated: Horse-Unicorn" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Generated: Horse-Unicorn
@@ -250,7 +250,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/kayak.jpg" alt="Input Image: Kayak" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/kayak.jpg" alt="Input Image: Kayak" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Kayak
@@ -258,7 +258,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/origin_surfer.gif" alt="Input Video: Surfer" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/origin_surfer.gif" alt="Input Video: Surfer" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Surfer
@@ -266,7 +266,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                  <img src="results/surfer_kayak.gif" alt="Generated: Surfer-Kayak" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                  <img src="results/surfer_kayak.gif" alt="Generated: Surfer-Kayak" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Generated: Surfer-Kayak
@@ -280,7 +280,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/cat.png" alt="Input Image: Cat" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/cat.png" alt="Input Image: Cat" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Cat
@@ -288,7 +288,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/origin_astronaut.gif" alt="Input Video: Astronaut" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/origin_astronaut.gif" alt="Input Video: Astronaut" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Astronaut
@@ -296,7 +296,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/astronaut_cat.gif" alt="Generated: Cat-Astronaut" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/astronaut_cat.gif" alt="Generated: Cat-Astronaut" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Generated: Cat-Astronaut
@@ -312,8 +312,8 @@
 
 <style>
 .image-scale-downer {
-  width: 512px;
-  height: 320px;
+  width: 100%;
+  aspect-ratio: 16/9;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -337,7 +337,12 @@
 }
 
 .columns {
-  margin-bottom: 0 !important;
+  margin-left: -0.5rem !important;
+  margin-right: -0.5rem !important;
+}
+
+.column {
+  padding: 0.5rem !important;
 }
 </style>
 
@@ -352,7 +357,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/unicorn.jpg" alt="Input Image: Unicorn" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/unicorn.jpg" alt="Input Image: Unicorn" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Unicorn
@@ -360,7 +365,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/origin_horse.gif" alt="Input Video: Horse" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/origin_horse.gif" alt="Input Video: Horse" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Horse
@@ -368,7 +373,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/horse_unicorn.gif" alt="MoCA-Video" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/horse_unicorn.gif" alt="MoCA-Video" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 MoCA-Video
@@ -376,7 +381,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/horse_unicorn_animatediff.gif" alt="AnimateDiffV2V" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/horse_unicorn_animatediff.gif" alt="AnimateDiffV2V" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 AnimateDiffV2V
@@ -384,7 +389,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/horse_unicorn_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/horse_unicorn_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 FreeBlend+DynamiCrafter
@@ -398,7 +403,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/kayak.jpg" alt="Input Image: Kayak" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/kayak.jpg" alt="Input Image: Kayak" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Kayak
@@ -406,7 +411,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                    <img src="results/origin_surfer.gif" alt="Input Video: Surfer" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                    <img src="results/origin_surfer.gif" alt="Input Video: Surfer" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Surfer
@@ -414,7 +419,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/surfer_kayak.gif" alt="MoCA-Video" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/surfer_kayak.gif" alt="MoCA-Video" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 MoCA-Video
@@ -422,7 +427,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/sufer_kayak_animatediff.gif" alt="AnimateDiffV2V" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/sufer_kayak_animatediff.gif" alt="AnimateDiffV2V" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 AnimateDiffV2V
@@ -430,7 +435,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/surfer_kayak_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/surfer_kayak_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 FreeBlend+DynamiCrafter
@@ -444,7 +449,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/cat.png" alt="Input Image: Cat" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/cat.png" alt="Input Image: Cat" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Cat
@@ -452,7 +457,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                  <img src="results/origin_astronaut.gif" alt="Input Video: Astronaut" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                  <img src="results/origin_astronaut.gif" alt="Input Video: Astronaut" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Astronaut
@@ -460,7 +465,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/astronaut_cat.gif" alt="MoCA-Video" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/astronaut_cat.gif" alt="MoCA-Video" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 MoCA-Video
@@ -468,7 +473,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/astronaut_cat_animatediff.gif" alt="AnimateDiffV2V" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/astronaut_cat_animatediff.gif" alt="AnimateDiffV2V" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 AnimateDiffV2V
@@ -476,7 +481,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/astronaut_cat_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/astronaut_cat_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 FreeBlend+DynamiCrafter
@@ -490,7 +495,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/cat.png" alt="Input Image: Cat" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/cat.png" alt="Input Image: Cat" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Cat
@@ -498,7 +503,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                  <img src="results/origin_mouse.gif" alt="Input Video: Mouse" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                  <img src="results/origin_mouse.gif" alt="Input Video: Mouse" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Mouse
@@ -506,7 +511,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/mouse_cat.gif" alt="MoCA-Video" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/mouse_cat.gif" alt="MoCA-Video" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 MoCA-Video
@@ -514,7 +519,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/mouse_cat_animatediff.gif" alt="AnimateDiffV2V" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/mouse_cat_animatediff.gif" alt="AnimateDiffV2V" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 AnimateDiffV2V
@@ -522,7 +527,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/mouse_cat_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/mouse_cat_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 FreeBlend+DynamiCrafter
@@ -536,7 +541,7 @@
           <div class="columns is-centered is-vcentered">
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/cat.png" alt="Input Image: Cat" style="width: 512px; height: 320px; object-fit: cover;"/>
+                <img src="results/cat.png" alt="Input Image: Cat" style="width: 100%; height: 100%; object-fit: cover;"/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Image: Cat
@@ -544,7 +549,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/origin_bird.gif" alt="Input Video: Bird" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/origin_bird.gif" alt="Input Video: Bird" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 Input Video: Bird
@@ -552,7 +557,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/bird_cat.gif" alt="MoCA-Video" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/bird_cat.gif" alt="MoCA-Video" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 MoCA-Video
@@ -560,7 +565,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                <img src="results/bird_cat_animatediff.gif" alt="AnimateDiffV2V" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                <img src="results/bird_cat_animatediff.gif" alt="AnimateDiffV2V" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 AnimateDiffV2V
@@ -568,7 +573,7 @@
             </div>
             <div class="column has-text-centered">
               <div class="image-scale-downer">
-                  <img src="results/bird_cat_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 512px; height: 320px; object-fit: cover;" loop autoplay/>
+                  <img src="results/bird_cat_freeblend.gif" alt="FreeBlend+DynamiCrafter" style="width: 100%; height: 100%; object-fit: cover;" loop autoplay/>
               </div>
               <h2 class="subtitle has-text-centered mt-2">
                 FreeBlend+DynamiCrafter
