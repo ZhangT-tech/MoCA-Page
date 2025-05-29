@@ -52,21 +52,24 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Motion-Aware Concept Alignment for Consistent Video Editing</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://zhangt-tech.github.io/" target="_blank">Tong Zhang</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=wHJ_cBIAAAAJ&hl=de" target="_blank">Juan C Leon Alcazar</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://escorciav.github.io/" target="_blank">Victor Escorciar</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://ivul.kaust.edu.sa/" target="_blank">Bernard Ghanem</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">KAUST, Samsung Research</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -148,7 +151,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We introduce MoCA-Video (Motion Concept Alignment in Video), a training-free framework bridging the gap between image-domain semantic mixing and video. Given a generated video and a user-provided reference image, MoCA-Video injects the semantic features of the reference image into a specific object within the video, while preserving the original motion and visual context. Our approach leverages a diagonal denoising schedule and class-agnostic segmentation to detect and track objects in the latent space and precisely control the spatial location of the blended objects. To ensure temporal coherence, we incorporate momentum-based semantic corrections and gamma residual noise stabilization for smooth frame transitions. We evaluate MoCA's performance using the standard SSIM, image-level LPIPS, temporal LPIPS, and introduce a novel metric CASS (Conceptual Alignment Shift Score) to evaluate the consistency and effectiveness of the visual shifts between the source prompt and the modified video frames. Using self-constructed dataset, MoCA-Video outperforms current baselines, achieving superior spatial consistency, coherent motion, and a significantly higher CASS score, despite having no training or fine-tuning. MoCA-Video demonstrates that structured manipulation in the diffusion noise trajectory allows for controllable, high-quality video synthesis.
           </p>
         </div>
       </div>
@@ -162,62 +165,130 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+        <!-- Horse-Unicorn Example -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="results/unicorn.jpg" alt="Input Image: Unicorn"/>
+              <h2 class="subtitle has-text-centered">
+                Input Image: Unicorn
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/origin_horse.gif" alt="Input Video: Horse"/>
+              <h2 class="subtitle has-text-centered">
+                Input Video: Horse
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/horse_unicorn.gif" alt="Generated: Horse-Unicorn"/>
+              <h2 class="subtitle has-text-centered">
+                Generated: Horse-Unicorn
+              </h2>
+            </div>
+          </div>
+        </div>
 
+        <!-- Surfer-Kayak Example -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="results/kayak.jpg" alt="Input Image: Kayak"/>
+              <h2 class="subtitle has-text-centered">
+                Input Image: Kayak
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/origin_surfer.gif" alt="Input Video: Surfer"/>
+              <h2 class="subtitle has-text-centered">
+                Input Video: Surfer
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/surfer_kayak.gif" alt="Generated: Surfer-Kayak"/>
+              <h2 class="subtitle has-text-centered">
+                Generated: Surfer-Kayak
+              </h2>
+            </div>
+          </div>
+        </div>
 
+        <!-- Cow-Sheep Example -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="results/sheep.png" alt="Input Image: Sheep"/>
+              <h2 class="subtitle has-text-centered">
+                Input Image: Sheep
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/origin_cow.gif" alt="Input Video: Cow"/>
+              <h2 class="subtitle has-text-centered">
+                Input Video: Cow
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/cow_sheep.gif" alt="Generated: Cow-Sheep"/>
+              <h2 class="subtitle has-text-centered">
+                Generated: Cow-Sheep
+              </h2>
+            </div>
+          </div>
+        </div>
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- Bird-Cat Example -->
+        <div class="item">
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="results/cat.png" alt="Input Image: Cat"/>
+              <h2 class="subtitle has-text-centered">
+                Input Image: Cat
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/origin_bird.gif" alt="Input Video: Bird"/>
+              <h2 class="subtitle has-text-centered">
+                Input Video: Bird
+              </h2>
+            </div>
+            <div class="column">
+              <img src="results/bird_cat.gif" alt="Generated: Bird-Cat"/>
+              <h2 class="subtitle has-text-centered">
+                Generated: Bird-Cat
+              </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- End image carousel -->
+
+
+
+<!-- 
+Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
 <!-- End youtube video -->
 
 
