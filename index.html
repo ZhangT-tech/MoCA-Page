@@ -540,30 +540,18 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-centered">Baseline Comparison</h2>
         <div class="content has-text-justified">
-          <p><strong>Definition of CASS:</strong></p>
-
-          <p>Let the CLIP similarity scores be defined as:</p>
-
           <p>$$\text{CLIP-T}_{\text{orig}} = \text{sim}(E(V_{\text{orig}}), T_{\text{orig}}), \quad
           \text{CLIP-T}_{\text{fused}} = \text{sim}(E(V_{\text{fused}}), T_{\text{orig}})$$</p>
 
           <p>$$\text{CLIP-I}_{\text{orig}} = \text{sim}(E(V_{\text{orig}}), E(I_{\text{cond}})), \quad
           \text{CLIP-I}_{\text{fused}} = \text{sim}(E(V_{\text{fused}}), E(I_{\text{cond}}))$$</p>
 
-          <p>The CASS score is then computed as:</p>
-
           <p>$$\text{CASS} = (\text{CLIP-I}_{\text{fused}} - \text{CLIP-I}_{\text{orig}}) - (\text{CLIP-T}_{\text{fused}} - \text{CLIP-T}_{\text{orig}})$$</p>
 
-          <p>To normalize across varying baseline similarities, we define relative shifts:</p>
+          <p>$$\text{relCLIP-I} = \frac{\text{CLIP-I}_{\text{fused}} - \text{CLIP-I}_{\text{orig}}}{\text{CLIP-I}_{\text{orig}}}, \quad
+          \text{relCLIP-T} = \frac{\text{CLIP-T}_{\text{fused}} - \text{CLIP-T}_{\text{orig}}}{\text{CLIP-T}_{\text{orig}}}$$</p>
 
-          <p>$$\text{rel\_CLIP-I} = \frac{\text{CLIP-I}_{\text{fused}} - \text{CLIP-I}_{\text{orig}}}{\text{CLIP-I}_{\text{orig}}}, \quad
-          \text{rel\_CLIP-T} = \frac{\text{CLIP-T}_{\text{fused}} - \text{CLIP-T}_{\text{orig}}}{\text{CLIP-T}_{\text{orig}}}$$</p>
-
-          <p>Thus, the relative CASS score becomes:</p>
-
-          <p>$$\text{relCASS} = \text{rel\_CLIP-I} - \text{rel\_CLIP-T}$$</p>
-
-          <p>This captures the net shift toward the conditioned image and away from the original prompt.</p>
+          <p>$$\text{relCASS} = \text{relCLIP-I} - \text{relCLIP-T}$$</p>
         </div>
         <div class="content has-text-centered">
           <img src="results/baseline_comparison.png" alt="Baseline Comparison" style="width: 100%; height: auto; object-fit: scale-down;">
